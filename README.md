@@ -8,8 +8,6 @@ _website design project_
 
 This project is for educational porpuses only.
 
-Site published at: https://sigitazaromskiene.github.io/12-app-expenses/
-
 ## 🎯 Project features/goals
 
 - Github pages
@@ -17,39 +15,34 @@ Site published at: https://sigitazaromskiene.github.io/12-app-expenses/
 
 ## 🧰 Getting Started
 
-### 💻 Prerequisites
+Getting Started with Create React App
+This project was bootstrapped with Create React App.
 
-Node.js - _download and install_
+Available Scripts
+In the project directory, you can run:
 
-```
-https://nodejs.org
-```
+npm start
+Runs the app in the development mode.
+Open http://localhost:3000 to view it in your browser.
 
-Git - _download and install_
+The page will reload when you make changes.
+You may also see any lint errors in the console.
 
-```
-https://git-scm.com
-```
-### 🏃 Run locally
+npm test
+Launches the test runner in the interactive watch mode.
+See the section about running tests for more information.
 
-Would like to run this project locally? Open terminal and follow these steps:
+npm run build
+Builds the app for production to the build folder.
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-1. Clone the repo
-   ```sh
-   git clone https://github.com/front-end-by-rimantas/41-grupe-ufo.git
-   ```
-2. Install NPM packages
-   ```sh
-   npm i
-   ```
-   or
-   ```sh
-   npm install
-   ```
-3. Run the server
-   ```sh
-   npm run dev
-   ```
+The build is minified and the filenames include the hashes.
+Your app is ready to be deployed!
+
+See the section about deployment for more information.
+
+npm run eject
+Note: this is a one-way operation. Once you eject, you can’t go back!
 
 ### 🧪 Running tests
 
