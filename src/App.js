@@ -1,10 +1,11 @@
+import React, { useState } from "react";
 import "./App.css";
 import Expenses from "./components/Expenses";
 import Card from "./components/Card";
 import style from "./components/Expenses.module.css";
 import NewExpense from "./components/NewExpense/NewExpense";
 
-const expenses = [
+const dummy_expenses = [
   {
     id: "e1",
     title: "Toilet Paper",
@@ -26,9 +27,15 @@ const expenses = [
   },
 ];
 function App(props) {
+  const [expenses, setExpenses] = useState(dummy_expenses);
+  const addedExpenseHandler = (expense) => {
+    setExpenses((prevState) => {
+      return [expense, ...prevState];
+    });
+  };
   return (
     <Card className={style.expenses}>
-      <NewExpense />
+      <NewExpense onAddedExpense={addedExpenseHandler} />
       <Expenses allExpenses={expenses} />
     </Card>
   );

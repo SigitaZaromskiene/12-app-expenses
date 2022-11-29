@@ -24,7 +24,7 @@ const NewForm = (props) => {
       amount: enteredAmount,
       date: new Date(enteredDate),
     };
-    console.log(expenseData);
+    props.onFormInputData(expenseData);
     setUpdatedTitle("");
     setUpdatedAmount("");
     setUpdatedDate("");
